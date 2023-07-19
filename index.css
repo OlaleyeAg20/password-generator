@@ -2,15 +2,29 @@
                box-sizing: border-box;
 
           }
+           #light{
+               display: none; 
+          } 
           body{
-               background: #202938;
+               background: #FFF;
                font-family: Sans-Serif;
+               display: flex;
+               justify-content: center;
+               align-items: centre;
           }
           .container{
-               margin: 100px auto;
+               margin: auto;
                padding: 1.5rem;
-               color: #F5F7FA;
+               color: #333;
      
+          }
+          .btn{
+               background: none;
+               border: none;
+               outline: none;
+          }
+          .dark-img{
+               width: 100px;
           }
           .main-btn{
                border: none;
@@ -71,3 +85,35 @@
           .input{
                color: white;
           }
+          .headphone{
+           border-radius: 10px;
+           width: 70px;
+           height: 10px;
+           margin: 8px auto;
+           background: #333;
+          }
+          .button{
+           border-radius: 50%;
+           width: 60px;
+           height: 60px;
+           margin: 20px auto;
+           background: #ccc;
+          }
+          .iframe{
+           padding: 10px 25px 3px;
+           border-radius: 16px;
+           box-shadow:  3px 3px 3px #b3b3b3,
+             -3px -3px 5px #b3b3b3;
+             background: #000;
+          }
+          iframe{
+           border: none;
+          }
+@media (min-width: 500px){
+     body{
+          background: #fff;
+     }
+     .container{
+          color: #333;
+     }
+}
