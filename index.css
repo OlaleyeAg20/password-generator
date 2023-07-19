@@ -106,8 +106,15 @@
              -3px -3px 5px #b3b3b3;
              background: #000;
           }
+          #screen{
+           width: 100%;
+           height: 500px;
+           background: #333;
+           display: none;
+          }
           iframe{
            border: none;
+           background: #333;
           }
 @media (min-width: 500px){
      body{
