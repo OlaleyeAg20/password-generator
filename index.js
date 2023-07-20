@@ -1,5 +1,9 @@
 const numberIndex = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","+","&","?","!","*",";",":","@","#","_","(",")","%"]
 const darkBtn = document.getElementById("dark")
+let phoneSwitch = true
+const phoneBtn  = document.getElementById("button")
+const screen  = document.getElementById("screen")
+const frame = document.getElementById("frame")
 const lightBtn = document.getElementById("light")
 let output = document.getElementById("password")
 let button = document.getElementById("btn")
@@ -27,6 +31,16 @@ function generate(){
        lightMode()
        lightBtn.style.display = 'none'
        darkBtn.style.display = 'block'
+  })
+    phoneBtn.addEventListener("click", function(){
+       phoneSwitch = !phoneSwitch
+       if(phoneSwitch === true){
+        frame.style.display = 'none'
+        screen.style.display = "block"
+       }else{
+        frame.style.display = 'block'
+        screen.style.display = "none"
+       }
   })
   function generate2(){
   let password1 =   Math.floor(Math.random()*numberIndex.length)
