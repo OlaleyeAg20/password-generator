@@ -98,6 +98,7 @@
            height: 60px;
            margin: 20px auto;
            background: #333;
+           cursor: pointer;
           }
           .iframe{
            padding: 10px 25px 3px;
